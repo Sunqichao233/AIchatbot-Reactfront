@@ -1,10 +1,12 @@
+import React from 'react';
+
 import { Routes, Route, Navigate } from "react-router-dom"
 import LoginForm from "@/components/LoginForm"
 import RegisterForm from "@/components/RegisterForm"
 import ResetPassword from "@/components/ResetPassword"
 import LandingPage from "@/components/LandingPage";
 
-function App() {
+const App: React.FC<any> = () => {
   return (
     <Routes>
       {/* 首页显示落地页 */}

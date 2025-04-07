@@ -1,9 +1,11 @@
+import React from 'react';
+
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {Card} from "@/components/ui/card";
 import { Globe, User } from "lucide-react";
 
-export default function LandingPage() {
+export default function LandingPage()  {
   const navigate = useNavigate();
 
   return (
@@ -15,8 +17,8 @@ export default function LandingPage() {
           <Button variant="ghost" className="text-white">Support</Button>
           <Button className="bg-blue-600 hover:bg-blue-700">Store</Button>
           <Globe className="w-5 h-5" />
-          <Button variant="ghost" onClick={() => navigate('/login')}>
-            <User className="w-5 h-5" />
+          <Button onClick={() => navigate('/login')}>
+            登录
           </Button>
         </nav>
       </header>
